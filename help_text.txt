@@ -1,0 +1,40 @@
+Welcome to the Print Queue Simulator!
+This simulation creates a scenario where a print job is randomly generated and checked (to ensure that it does not exceeds certain thresholds set by the user), before being enqueued into a printer queue (or priority queue). This is then dequeued for printing.
+
+How it works:
+This works by randomly creating a job based on user set parameters. Once the job is generated, the queue assesses whether the job is able to be added or not, based on: the available capacity of the queue, the size of the print job (in terms of pages), the estimated time it would take to print the job and if the job should be classed as a priority job or not (based on user set criteria, and where available).
+
+Available configuration options:
+Centralised print queue/Print queue per printer (Option coming in future version):
+Informs the simulator to use a centralised print queue or decentralised print queues. Accepts True or False (as a check box).
+
+Enable Priority Queue:
+Informs the simulator to enable the priority queue add-on. Jobs that meet the priority criteria will be added to the priority queue instead of the regular queue. Accepts True or False (as a check box).
+
+Priority Queue criteria:
+Informs the simulator which type of jobs should be treated as priority. Will only function if the “Enable Priority Queue” option is set to True. Accepts True or False (as a check box).
+
+Maximum number of jobs in the Queue:
+The maximum number of jobs the queue can handle before it must reject any new jobs. Does not affect the priority queue. Accepts any positive integer.
+
+Maximum acceptable job length:
+The maximum number page length that a job can have. A page length which is greater than this length will be rejected. Accepts any positive integer.
+
+Number of printers to use (Option coming in future version):
+This will inform the simulator of the number of printers it should utilise. Accepts any positive integer.
+
+Print speed of each printer (partially developed):
+This sets the print speed of each printer. Accepts any positive integer.
+
+Minimum and Maximum Page Length of a Print Job:
+This lets the simulator know the range of page lengths it should use when generating a print job. Accepts any positive integer.
+
+Average job frequency:
+This instructs the simulator to generate a new job every n seconds on average, where n is a positive integer.
+
+Simulation run time:
+This instructs the simulator to run for a certain number of “simulation seconds”. Accepts any positive integer.
+
+The program will inform you if data entered is erroneous.
+
+Version 0.35

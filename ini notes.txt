@@ -1,0 +1,20 @@
+[Print Queue] # Will have to code in per printer later on....
+Centralised = True
+PriorityQueue = True
+PriorityJobCriteria = Staff SStudent
+QueueCapacity = 25
+MaxAcceptedJobLength = 65
+MaxAcceptedRunningTime = 500
+
+[Printers]  # May need to think about how to do this..... FOUND SOLUTION HERE: https://stackoverflow.com/questions/21598872/how-to-create-multiple-class-objects-with-a-loop-in-python
+NumberOfPrinters = 1
+PrintSpeed = 15
+# Printing speeds T_T
+
+[Jobs]
+MinLength = 1
+MaxLength = 145
+AverageJobFrequency = 12  # Average interval per job.
+
+[Simulation]
+SimulationTime = 3600 # Seconds.
